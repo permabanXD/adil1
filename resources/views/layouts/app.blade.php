@@ -17,34 +17,30 @@
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
     <!--FONTAWESOME MAIN STYLE -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" />
     <!--PRETTYPHOTO MAIN STYLE -->
-    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="{{asset('css/prettyPhoto.css')}}" rel="stylesheet" />
     <!--CUSTOM STYLE -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <link href="{{asset('css/style.css')}} " rel="stylesheet" />
+
 </head>
 
 <body>
-    
+
 @yield('content')
 
 
-    <script src="assets/js/jquery.js"></script>
+    <script src="{{asset('js/jquery.js')}}"></script>
     <!-- BOOTSTRAP SCRIPTS LIBRARY -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <!-- PRETTYPHOTO  SCRIPTS  LIBRARY-->
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
      <!-- SCROLL REVEL  SCRIPTS  LIBRARY-->
-    <script src="assets/js/scrollReveal.js"></script>
+    <script src="{{asset('js/scrollReveal.js')}}"></script>
     <!-- CUSTOM SCRIPT-->
-    <script src="assets/scripts/custom.js"></script>
+    <script src="{{asset('scripts/custom.js')}}"></script>
 
 
 </body>

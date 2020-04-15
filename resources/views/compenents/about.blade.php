@@ -17,7 +17,7 @@
                 <div class="col-md-3 col-sm-6" data-scrollreveal="enter left and move 100px, wait 0.6s">
                     <div class="text-center">
                         <p>
-                            <img class="img-responsive img-thumbnail img-circle"  src="assets/img/team/team1.png" alt="">
+                            <img class="img-responsive img-thumbnail img-circle"  src="{{asset('/img/team/team1.png')}}" alt="">
                         </p>
                         <h3>Romiz Nopvok</h3>
                         <p>
@@ -28,7 +28,7 @@
                 <div class="col-md-3 col-sm-6" data-scrollreveal="enter bottom and move 100px, wait 0.6s">
                     <div class="text-center">
                         <p>
-                            <img class="img-responsive img-thumbnail img-circle" src="assets/img/team/team2.jpg" alt="">
+                            <img class="img-responsive img-thumbnail img-circle" src="{{asset('/img/team/team2.jpg')}}" alt="">
                         </p>
                         <h3>Jhon Deo</h3>
                         <p>
@@ -39,7 +39,7 @@
                 <div class="col-md-3 col-sm-6" data-scrollreveal="enter bottom and move 100px, wait 0.6s">
                     <div class="text-center">
                         <p>
-                            <img class="img-responsive img-thumbnail img-circle" src="assets/img/team/team1.png" alt="">
+                            <img class="img-responsive img-thumbnail img-circle" src="{{asset('/img/team/team1.png')}}" alt="">
                         </p>
                         <h3>Mark Kimza</h3>
                         <p>
@@ -50,7 +50,7 @@
                 <div class="col-md-3 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
                     <div class="text-center">
                         <p>
-                            <img class="img-responsive img-thumbnail img-circle"  src="assets/img/team/team2.jpg" alt="">
+                            <img class="img-responsive img-thumbnail img-circle"  src="{{asset('/img/team/team2.jpg')}}" alt="">
                         </p>
                         <h3>Nopen Riox</h3>
                         <p>

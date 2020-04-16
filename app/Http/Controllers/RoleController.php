@@ -14,7 +14,8 @@ class RoleController extends Controller
      */
     public function index()
     {
-        //
+        $role= Role::all();
+        return view('admin.role.index',compact('role'));
     }
 
     /**
@@ -24,7 +25,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.role.add');
     }
 
     /**
@@ -35,7 +36,11 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $role= new Role();
+        $role->role=$request->role;
+        $role->special=$request->has('special');
+        $role->save();
+        return redirect()->route('role.index');
     }
 
     /**
@@ -57,7 +62,7 @@ class RoleController extends Controller
      */
     public function edit(Role $role)
     {
-        //
+        return view('admin.role.edit',compact('role'));
     }
 
     /**
@@ -69,7 +74,10 @@ class RoleController extends Controller
      */
     public function update(Request $request, Role $role)
     {
-        //
+        $role->role=$request->role;
+        $role->special=$request->has('special');
+        $role->save();
+        return redirect()->route('role.index');
     }
 
     /**
@@ -80,6 +88,7 @@ class RoleController extends Controller
      */
     public function destroy(Role $role)
     {
-        //
+        $role->delete();
+        return redirect()->back();
     }
 }

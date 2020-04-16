@@ -27,4 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/newsletter', 'NewsletterController@index')->name('newsletter');
 Route::post('/newsletter', 'NewsletterController@store')->name('storenew');
 Route::resource('/contact', 'ContactController');
+Route::resource('/role', 'RoleController');
+Route::resource('/team', 'TeamController');
+
 

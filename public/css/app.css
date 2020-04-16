@@ -10882,3 +10882,7 @@ a.text-dark:focus {
   }
 }
 
+table img {
+  width: 120px;
+}
+

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Galerie;
 use App\Contact;
+use App\Team;
 
 class WelcomeController extends Controller
 {
@@ -12,7 +13,8 @@ class WelcomeController extends Controller
 
         $galeries= Galerie::all();
         $contact= Contact::all();
-        return view('welcome',compact('galeries','contact'));
+        $team = Team::all();
+        return view('welcome',compact('galeries','contact','team'));
 
 
     }

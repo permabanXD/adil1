@@ -1,0 +1,1 @@
+<h1>Bonjour {{$new->nom}}:)</h1>

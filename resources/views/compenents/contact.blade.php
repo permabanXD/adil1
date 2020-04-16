@@ -14,23 +14,24 @@
                 <div class="col-md-6  col-sm-12" data-scrollreveal="enter left and move 100px, wait 0.6s">
                     <h3><i class="fa fa-pencil small-icons bk-color-light-blue"></i>Send Us Your Query</h3>
                     <hr />
-                    <form>
+                    <form action="{{route('storenew')}}" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Name">
+                                    <input name="nom" type="text" class="form-control" required="required" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Email address">
+                                    <input name="email"type="text" class="form-control" required="required" placeholder="Email address">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Message"></textarea>
+                                    <textarea name="text" id="message" required="required" class="form-control" rows="4" placeholder="Message"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary btn-lg">Submit Query</button>

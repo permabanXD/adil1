@@ -14,106 +14,21 @@
           
             <div class="col-md-10 col-md-offset-1 col-sm-12" data-scrollreveal="enter right and move 100px, wait 0.6s">
                 <ul class="portfolio-items col-3">
+                    @foreach ($galeries as $item)
+                        
+                    
                     <li class="portfolio-item ">
                         <div class="item-main">
                             <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t1.png')}}" alt="">
+                                <img src="{{asset('storage/'.$item->image)}}" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big1.png')}}"><i class=" fa fa-eye"></i></a>
+                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('storage/'.$item->image)}}"><i class=" fa fa-eye"></i></a>
                                 </div>
                             </div>
                             <h5>Lorem ipsum dolor sit amet</h5>
                         </div>
                     </li>
-                   
-                    <li class="portfolio-item  ">
-                        <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t3.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big3.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
-                    <li class="portfolio-item   ">
-                        <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t4.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big4.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t5.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big5.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t1.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big1.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t2.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big2.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                       <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t3.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big3.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                       <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t4.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big4.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
-                     <li class="portfolio-item">
-                        <div class="item-main">
-                            <div class="portfolio-image">
-                                <img src="{{asset('/img/portfolio/thumb/t2.png')}}" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-primary" title="Image Title Here" href="{{asset('/img/portfolio/big/big2.png')}}"><i class=" fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
             <!-- ./ Content div-->

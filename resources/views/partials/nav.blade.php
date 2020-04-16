@@ -17,6 +17,7 @@
                 <li><a href="#portfolio-section"><i class="fa fa-picture-o color-light-blue"></i> Portfolio</a></li>
                 <li><a href="#pricing-section"><i class="fa fa-plane color-blue"></i> Pricing</a></li>
                 <li><a href="#contact-section"><i class="fa fa-tint"></i> Contact</a></li>
+                <li><a href="{{route('admin')}}">Admin</a></li>
             </ul>
         </div>
     </div>

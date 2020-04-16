@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index')->name('welcome');
+
+Route::get('/admin', 'WelcomeController@admin')->name('admin');
 
 
 Route::resource('/galerie', 'GalerieController');
@@ -23,3 +23,7 @@ Route::resource('/galerie', 'GalerieController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/newsletter', 'NewsletterController@index')->name('newsletter');
+Route::post('/newsletter', 'NewsletterController@store')->name('storenew');
+

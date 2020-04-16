@@ -41,11 +41,17 @@
                     </form>
                 </div>
                 <div class="col-md-4 col-md-offset-1  col-sm-12" data-scrollreveal="enter right and move 100px, wait 0.6s">
+
                     <h3><i class="fa fa-comments small-icons bk-color-red"></i>Reach Us Here</h3>
                     <hr />
-                    123, New york lane.<br />
-                    Call: +23-00-89-009<br />
-                    Email: info@yourdomain.com<br />
+                    @foreach ($contact as $item)
+                        
+                    {{$item->adresse}}<br />
+                    Call: {{$item->numero}}<br />
+                    Email: {{$item->email}}<br />
+
+
+                    @endforeach
                     <h3><i class="fa fa-plus small-icons bk-color-green"></i>Social Presence</h3>
                     <a href="#"><i class="fa fa-facebook fa-3x color-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter fa-3x color-twitter"></i></a>

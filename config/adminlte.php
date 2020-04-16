@@ -221,8 +221,13 @@ return [
         
         ['header' => 'account_settings'],
         [
-            'text' => 'galerie',
             'url'  => 'galerie',
+            'text' => 'galerie',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'url'  => 'contact',
+            'text' => 'contact',
             'icon' => 'fas fa-fw fa-user',
         ],
         [

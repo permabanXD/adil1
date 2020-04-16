@@ -1,1 +1,1 @@
-<h1>Bonjour {{$new->nom}}:)</h1>
+<h1>Bonjour {{$adil->nom}}:)</h1>
